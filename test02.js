@@ -1,7 +1,7 @@
 (function($, window) {
   $(function() {
     // この中に処理を書きます
-    
+
     //1.jQueryオブジェクトを削除するメソッドを調べ、<h2>を非表示(hide)ではなく、削除してみましょう。
     $('h2').remove();
 
@@ -25,10 +25,7 @@
       //4.でalertではなく、各文字列の最後にその長さを追加してみましょう。
       //例：jQueryのはじめ方[11文字]
       var length = ($(this).text().length);
-      $(this).append("[");
-      $(this).append(length);
-      $(this).append("文字");
-      $(this).append("]");
+      $(this).append("[" + length + "文字" + "]");
     });
   });
 })(jQuery, window);
